@@ -16,8 +16,4 @@ app.get('/fecha-completa', (req, res) => {
     res.send(fechaCompleta());
 })
 
-app.use((req, res) => {
-    res.status(404).send("Error 404: La ruta que estás buscando no existe.");
-  });
-
 export default app;
